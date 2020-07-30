@@ -1863,7 +1863,7 @@
 
 		available = {
 			is_subject = no
-			communism > 0.45
+			communism > 0.44
 		}
 		
 		bypass = {
@@ -4972,7 +4972,7 @@
 				tooltip = FRA_national_regeneration_trigger_tt
 				set_temp_variable = { FRA_rw_support = party_popularity@neutrality }
 				add_to_temp_variable = { FRA_rw_support = party_popularity@fascism }
-				check_variable = { FRA_rw_support > 0.5 }
+				check_variable = { FRA_rw_support > 0.6 }
 			}
 		}
 		
