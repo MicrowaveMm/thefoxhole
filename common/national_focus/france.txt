@@ -3300,7 +3300,7 @@
 	focus = {
 		id = FRA_france_undividable
 		icon = GFX_focus_chi_reach_out_to_france
-		x = -1
+		x = -0.5
 		y = 1
 		offset = {
 			x = 0
@@ -3309,7 +3309,6 @@
 		prerequisite = {
 			focus = FRA_expand_the_citizenship
 		}
-		mutually_exclusive = { focus = FRA_encourage_immigration }
 		relative_position_id = FRA_expand_the_citizenship
 		cost = 10
 
@@ -3346,6 +3345,7 @@
 				}
 				add_compliance = 10
 			}
+			remove_worker_shortage_effect = yes
 		}
 	}
 	focus = {
@@ -3392,42 +3392,42 @@
 			custom_effect_tooltip = FRA_french_union_tt
 		}
 	}
-	focus = {
-		id = FRA_encourage_immigration
-		icon = GFX_goal_generic_national_unity
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_expand_the_citizenship
-		}
-		mutually_exclusive = { focus = FRA_france_undividable }
-		relative_position_id = FRA_expand_the_citizenship
-		cost = 10
+	# focus = {
+	# 	id = FRA_encourage_immigration
+	# 	icon = GFX_goal_generic_national_unity
+	# 	x = 1
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = {
+	# 		focus = FRA_expand_the_citizenship
+	# 	}
+	# 	mutually_exclusive = { focus = FRA_france_undividable }
+	# 	relative_position_id = FRA_expand_the_citizenship
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 1
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-		available = {
+	# 	available = {
 			
-		}
+	# 	}
 		
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			remove_worker_shortage_effect = yes
-		}
-	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+	# 	completion_reward = {
+	# 		remove_worker_shortage_effect = yes
+	# 	}
+	# }
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
